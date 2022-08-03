@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Tabela Periodica</title>
+</head>
+<body>
+
+	<header>
+		<nav>
+			<a>QUÍMICA ELEMENTAR</a>
+		</nav>
+	</header>
+	
+	<section>
+		<div th:each="page : ${pages}">
+			<a th:href="${(#mvc.url('PPC#getPageDetalis').arg(0, page.id)).build()}">
+				<span th:text="${page.symbol}"></span>
+				<span  th:text="${page.name}"></span>
+				<span  th:text="${page.numberAtomic}"></span>
+			</a>
+		</div>
+	</section>
+	
+</body>
+</html>

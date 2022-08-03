@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Tabela Periodica</title>
+	</head>
+	
+	<body>
+	
+		<header>
+		
+			<!-- Cabeçario -->
+			<nav>
+			    <a href="/elementos">QUÍMICA ELEMENTAR</a>
+			</nav>
+			
+		</header>
+		
+		<main>
+			
+				<article>
+		            <h1 ><span th:text="${page.name}"></span></h1>
+		            
+		            <section>
+		                <p ><span th:utext="{$page.text}"></span></p>
+		            </section>
+            
+       		 	</article>
+				
+
+		
+		</main>
+		
+	</body>
+	
+</html>
