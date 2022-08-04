@@ -7,6 +7,7 @@ import com.tabela.model.Pages;
 public interface PeriodicaPagesService {
 
 	List<Pages> fidAll();
-	Pages findById(long id);
+	Pages getReferenceById(long id);
 	Pages save(Pages page);
+	
 }

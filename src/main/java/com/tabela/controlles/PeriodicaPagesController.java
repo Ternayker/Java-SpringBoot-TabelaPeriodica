@@ -1,7 +1,6 @@
 package com.tabela.controlles;
 
 import java.util.List;
-import java.util.Optional;
 
 import javax.validation.Valid;
 
@@ -31,13 +30,14 @@ public class PeriodicaPagesController {
 		return mv;
 	}
 	
-	@RequestMapping(value = "/elemetos/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/elementos/{id}", method = RequestMethod.GET)
 	public ModelAndView getPageDetalis(@PathVariable("id") long id) {
 		ModelAndView mv = new ModelAndView("pageDetalis");
-		Pages page = periodicaRepository.findById(id);
+		Pages page = periodicaRepository.getReferenceById(id);
 		mv.addObject("page",page);
 		return mv;
 	}
+	
 	
 	//Função de ADM
 	

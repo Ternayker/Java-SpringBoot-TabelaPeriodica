@@ -20,10 +20,10 @@
 		<main>
 			
 				<article>
-		            <h1 ><span th:text="${page.name}"></span></h1>
+		            <h1 ><span th:utext="*{page.name}"></span></h1>
 		            
 		            <section>
-		                <p ><span th:utext="{$page.text}"></span></p>
+		                <p ><span th:utext="*{page.text}"></span></p>
 		            </section>
             
        		 	</article>

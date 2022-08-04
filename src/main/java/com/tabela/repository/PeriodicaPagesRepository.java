@@ -6,5 +6,4 @@ import com.tabela.model.Pages;
 
 public interface PeriodicaPagesRepository extends JpaRepository<Pages, Long>{
 	
-
 }

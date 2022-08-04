@@ -19,8 +19,8 @@ public class PeriodicaPagesImplement implements PeriodicaPagesService{
 	}
 
 	@Override
-	public Pages findById(long id) {
-		return periodicaRepository.findById(id).get();
+	public Pages getReferenceById(long id) {
+		return periodicaRepository.getReferenceById(id);
 	}
 
 	@Override
