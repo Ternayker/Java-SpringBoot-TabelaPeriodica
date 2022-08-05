@@ -6,6 +6,7 @@
 		<title>Tabela Periodica</title>
 		<link rel="stylesheet" type="text/css" href="../css/EstilosGerais.css">
 		<link rel="stylesheet" type="text/css" href="../css/Pages.css">
+		<link rel="stylesheet" type="text/css" href="../css/tabela.css">
 	</head>
 	
 	<body>
@@ -17,13 +18,174 @@
 		</header>
 		
 		<section class="contener">
-			<div class="button-element" th:each="page : ${pages}">
-				<a th:href="${(#mvc.url('PPC#getPageDetalis').arg(0, page.id)).build()}">
-					<span class="number" th:text="${page.numberAtomic}"></span>
-					<span th:text="${page.symbol}"></span>
-					<span  th:text="${page.name}"></span>
-				</a>
-			</div>
+			<table>
+			
+				<!-- Primeira fila -->
+				<tr>
+					<td class="naomt"> <p class="num">1</p> <h3 class="symbol">H</h3> <p class="name">Hidrogênio</p></td>
+					<td colspan="16"></td>
+					<td class="gasnobre"> <p class="num">2</p> <h3 class="symbol">He</h3> <p class="name">Hélio</p></td>
+				</tr>
+				
+				<!-- Segunda fila -->
+				<tr>
+					<td class="mtalcalinos"> <p class="num">3</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mtalcalinosterro"> <p class="num">1</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td colspan="10"></td>
+					<td class="semimt"> <p class="num">4</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="naomt"> <p class="num">5</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="naomt"> <p class="num">6</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="naomt"> <p class="num">7</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="halogenio"> <p class="num">8</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="gasnobre"> <p class="num">9</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+				</tr>
+				
+				<!-- Terceira fila -->
+				<tr>
+					<td class="mtalcalinos"> <p class="num">10</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mtalcalinosterro"> <p class="num">11</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td colspan="10"></td>
+					<td class="outromt"> <p class="num">12</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="semimt"> <p class="num">13</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="naomt"> <p class="num">14</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="naomt"> <p class="num">15</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="halogenio"> <p class="num">16</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="gasnobre"> <p class="num">17</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+				</tr>
+				
+				<!-- Quarta fila -->
+				<tr>
+					<td class="mtalcalinos"> <p class="num">18</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mtalcalinosterro"> <p class="num">19</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">20</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">21</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">22</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">23</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">24</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">25</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">26</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">27</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">28</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">29</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="outromt"> <p class="num">30</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="semimt"> <p class="num">31</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="semimt"> <p class="num">32</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="naomt"> <p class="num">33</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="halogenio"> <p class="num">34</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="gasnobre"> <p class="num">35</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+				</tr>
+				
+				<!-- Quinta fila -->
+				<tr>
+					<td class="mtalcalinos"> <p class="num">36</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mtalcalinosterro"> <p class="num">37</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">38</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">39</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">40</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">41</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">42</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">43</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">44</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">45</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">46</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">47</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="outromt"> <p class="num">48</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="outromt"> <p class="num">49</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="semimt"> <p class="num">50</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="semimt"> <p class="num">51</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="halogenio"> <p class="num">52</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="gasnobre"> <p class="num">53</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+				</tr>
+				
+				<!-- Sexta fila -->
+				<tr>
+					<td class="mtalcalinos"> <p class="num">54</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mtalcalinosterro"> <p class="num">55</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td> <p class="num">1</p></td>
+					<td class="mttransi"> <p class="num">56</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">57</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">58</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">59</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">60</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">61</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">62</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">63</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">64</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="outromt"> <p class="num">65</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="outromt"> <p class="num">66</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="outromt"> <p class="num">67</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="semimt"> <p class="num">68</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="halogenio"> <p class="num">69</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="gasnobre"> <p class="num">70</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+				</tr>
+				
+				<!-- Setima fila -->
+				<tr>
+					<td class="mtalcalinos"> <p class="num">1</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mtalcalinosterro"> <p class="num">1</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td> <p class="num">1</p></td>
+					<td class="mttransi"> <p class="num">71</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">72</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">73</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">74</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">75</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">76</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">77</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">78</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="mttransi"> <p class="num">79</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="outromt"> <p class="num">80</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="outromt"> <p class="num">81</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="outromt"> <p class="num">82</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="outromt"> <p class="num">83</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="halogenio"> <p class="num">84</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="gasnobre"> <p class="num">85</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+				</tr>
+				
+				<tr>
+					<td class="pulo"></td>
+				</tr>
+				
+				<!-- Oitava fila -->
+				<tr>
+					<td colspan="3"></td>
+					<td class="lantanideos"> <p class="num">57</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="lantanideos"> <p class="num">58</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="lantanideos"> <p class="num">59</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="lantanideos"> <p class="num">60</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="lantanideos"> <p class="num">61</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="lantanideos"> <p class="num">62</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="lantanideos"> <p class="num">63</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="lantanideos"> <p class="num">64</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="lantanideos"> <p class="num">65</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="lantanideos"> <p class="num">66</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="lantanideos"> <p class="num">67</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="lantanideos"> <p class="num">68</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="lantanideos"> <p class="num">69</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="lantanideos"> <p class="num">71</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="lantanideos"> <p class="num">72</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+				</tr>
+				
+				<!-- Nona fila -->
+				<tr>
+					<td colspan="3"></td>
+					<td class="actinideos"><a href="#"><p class="num">1</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></a></td>
+					<td class="actinideos"> <p class="num">89</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="actinideos"> <p class="num">90</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="actinideos"> <p class="num">91</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="actinideos"> <p class="num">92</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="actinideos"> <p class="num">93</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="actinideos"> <p class="num">94</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="actinideos"> <p class="num">95</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="actinideos"> <p class="num">96</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="actinideos"> <p class="num">97</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="actinideos"> <p class="num">98</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="actinideos"> <p class="num">99</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="actinideos"> <p class="num">100</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="actinideos"> <p class="num">101</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+					<td class="actinideos"> <p class="num">102</p> <h3 class="symbol">H</h3> <p class="name">hidrogenio</p></td>
+				</tr>
+				
+			</table>
 		</section>
 		
 	</body>

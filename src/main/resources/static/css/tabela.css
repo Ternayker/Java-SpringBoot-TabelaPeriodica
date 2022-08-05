@@ -1,0 +1,80 @@
+@charset "ISO-8859-1";
+
+table{
+	width: 90%;
+	margin: auto;
+}
+
+td{
+	border-radius: 5px;
+}
+
+.num{
+	margin: -.5px 3px;
+	color: #000;
+}
+
+.symbol{
+	margin-top: -10px;
+	text-align: center;
+	font-size: 25px;
+	font-family: Arial;
+	color: #000;
+}
+
+.name{
+	margin-top: -25px;
+	text-align: center;
+	font-size: 14px;
+	color: #000;
+}
+
+.pulo{
+	padding: 20px;
+}
+
+.naomt{
+	background: #9ACD32;
+}
+
+.gasnobre{
+	background: #1E90FF;
+}
+
+.mtalcalinos{
+	background: #FFA500;
+}
+
+.mtalcalinosterro{
+	background: #CDCD00;
+}
+
+.semimt{
+	background: #58A3AB;
+}
+
+.halogenio{
+	background: #65ACDD;
+}
+
+.outromt{
+	background: #ABC1DD;
+}
+
+.mttransi{
+	background: #F08080;
+}
+
+.lantanideos{
+	background: #87CEFF;
+}
+
+.actinideos{
+	background: #CD96CD;
+}
+
+
+
+
+
+
