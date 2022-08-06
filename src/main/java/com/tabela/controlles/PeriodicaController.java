@@ -17,7 +17,7 @@ import com.tabela.model.Pages;
 import com.tabela.repository.PeriodicaPagesRepository;
 
 @Controller
-public class PeriodicaPagesController {
+public class PeriodicaController {
 
 	@Autowired
 	PeriodicaPagesRepository periodicaRepository;
