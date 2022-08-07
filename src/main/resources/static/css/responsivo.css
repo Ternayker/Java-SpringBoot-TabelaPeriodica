@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+@media all and (max-width: 2000px) {
+    .content{
+      overflow-y: scroll;
+    }
+}

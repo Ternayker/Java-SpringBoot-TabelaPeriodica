@@ -1,5 +1,40 @@
 @charset "UTF-8";
 
+.categorias{
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+	margin: auto;
+}
 
+.categorias button{
+	width: 20px;
+	height: 20px;
+	margin-left: 15px;
+	cursor: pointer;
+}
 
+.categorias p{
+	margin-top: 2px;
+	margin-left: 5px;
+	font-family: Arial;
+}
 
+.contanier{
+	width: 80%;
+	margin: auto;
+}
+
+.contanier h2{
+	margin-top: 100px;
+	text-align: center;
+	font-size: 30px;
+	font-family: Arial;
+}
+
+.contanier p{
+	text-indent: 1em;
+	margin-top: 5px;
+	font-size: 20px;
+	font-family: Arial;
+}

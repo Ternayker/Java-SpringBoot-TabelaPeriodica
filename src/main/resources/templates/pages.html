@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/EstilosGerais.css">
 		<link rel="stylesheet" type="text/css" href="../css/Pages.css">
 		<link rel="stylesheet" type="text/css" href="../css/tabela.css">
+		<link rel="stylesheet" type="text/css" href="../css/responsivo.css">
 	</head>
 	
 	<body>
@@ -19,652 +20,698 @@
 		
 		<section class="contener">
 		
-		<h1>Tabela Periodica</h1>
-		
-			<table>
-			
-				<!-- Primeira fila -->
-				<tr>
-					<td class="naomt">
-						<a th:href="@{/elementos/1}">
-							<span class="num">1</span><span class="symbol">H</span><span class="name">Hidrogênio</span>
-						</a>
-					</td>
+			<h1 class="titulo">Tabela Periodica</h1>
+			<div class="content">
+				<table>
+				
+					<!-- Primeira fila -->
+					<tr>
+						<td class="naomt">
+							<a th:href="@{/elementos/1}">
+								<span class="num">1</span><span class="symbol">H</span><span class="name">Hidrogênio</span>
+							</a>
+						</td>
+						
+						<td colspan="16"></td>
+						<td class="gasnobre"> 
+							<a th:href="@{/elementos/2}">
+								<span class="num">2</span><span class="symbol">He</span><span class="name">Hélio</span>
+							</a>
+						</td>
+					</tr>
 					
-					<td colspan="16"></td>
-					<td class="gasnobre"> 
-						<a th:href="@{/elementos/2}">
-							<span class="num">2</span><span class="symbol">He</span><span class="name">Hélio</span>
-						</a>
-					</td>
-				</tr>
+					<!-- Segunda fila -->
+					<tr>
+						<td class="mtalcalinos"> 
+							<a th:href="@{/elementos/3}">
+								<span class="num">3</span><span class="symbol">Li</span><span class="name">Lítio</span>
+							</a>
+						</td>
+						<td class="mtalcalinosterro"> 
+							<a th:href="@{/elementos/4}">
+								<span class="num">4</span><span class="symbol">Be</span><span class="name">Berílo</span>
+							</a>
+						</td>
+						<td colspan="10"></td>
+						<td class="semimt"> 
+							<a th:href="@{/elementos/5}">
+								<span class="num">5</span><span class="symbol">B</span><span class="name">Boro</span>
+							</a>
+						</td>
+						<td class="naomt"> 
+							<a th:href="@{/elementos/6}">
+								<span class="num">6</span><span class="symbol">C</span><span class="name">Carbono</span>
+							</a>
+						</td>
+						<td class="naomt"> 
+							<a th:href="@{/elementos/7}">
+								<span class="num">7</span><span class="symbol">N</span><span class="name">Nitrogênio</span>
+							</a>
+						</td>
+						<td class="naomt"> 
+							<a th:href="@{/elementos/8}">
+								<span class="num">8</span><span class="symbol">O</span><span class="name">Oxigênio</span>
+							</a>
+						</td>
+						<td class="halogenio"> 
+							<a th:href="@{/elementos/9}">
+								<span class="num">9</span><span class="symbol">F</span><span class="name">Flúor</span>
+							</a>
+						</td>
+						<td class="gasnobre">
+							<a th:href="@{/elementos/10}">
+								<span class="num">10</span><span class="symbol">Ne</span><span class="name">Neônio</span>
+							</a>
+						</td>
+					</tr>
+					
+					<!-- Terceira fila -->
+					<tr>
+						<td class="mtalcalinos">  
+							<a th:href="@{/elementos/11}">
+								<span class="num">11</span><span class="symbol">Na</span><span class="name">Sódio</span>
+							</a>
+						</td>
+						<td class="mtalcalinosterro">  
+							<a th:href="@{/elementos/12}">
+								<span class="num">12</span><span class="symbol">Mg</span><span class="name">Magnésio</span>
+							</a>
+						</td>
+						<td colspan="10"></td>
+						<td class="outromt">  
+							<a th:href="@{/elementos/13}">
+								<span class="num">13</span><span class="symbol">Al</span><span class="name">Alumínio</span>
+							</a>
+						</td>
+						<td class="semimt">  
+							<a th:href="@{/elementos/14}">
+								<span class="num">14</span><span class="symbol">Si</span><span class="name">Silício</span>
+							</a>
+						</td>
+						<td class="naomt"> 
+							<a th:href="@{/elementos/15}">
+								<span class="num">15</span><span class="symbol">P</span><span class="name">Fósforo</span>
+							</a>
+						</td>
+						<td class="naomt">  
+							<a th:href="@{/elementos/16}">
+								<span class="num">16</span><span class="symbol">S</span><span class="name">Enxofre</span>
+							</a>
+						</td>
+						<td class="halogenio">  
+							<a th:href="@{/elementos/17}">
+								<span class="num">17</span><span class="symbol">Cl</span><span class="name">Cloro</span>
+							</a>
+						</td>
+						<td class="gasnobre">  
+							<a th:href="@{/elementos/18}">
+								<span class="num">18</span><span class="symbol">Ar</span><span class="name">Argônio</span>
+							</a>
+						</td>
+					</tr>
+					
+					<!-- Quarta fila -->
+					<tr>
+						<td class="mtalcalinos"> 
+							<a th:href="@{/elementos/19}">
+								<span class="num">19</span><span class="symbol">K</span><span class="name">Potássio</span>
+							</a>
+						</td>
+						<td class="mtalcalinosterro"> 
+							<a th:href="@{/elementos/20}">
+								<span class="num">20</span><span class="symbol">Ca</span><span class="name">Cálcio</span>
+							</a>
+						</td>
+						<td class="mttransi"> 
+							<a th:href="@{/elementos/21}">
+								<span class="num">21</span><span class="symbol">Sc</span><span class="name">Escândio</span>
+							</a>
+						</td>
+						<td class="mttransi"> 
+							<a th:href="@{/elementos/22}">
+								<span class="num">22</span><span class="symbol">Ti</span><span class="name">Titânio</span>
+							</a>
+						</td>
+						<td class="mttransi"> 
+							<a th:href="@{/elementos/23}">
+								<span class="num">23</span><span class="symbol">V</span><span class="name">Vanádio</span>
+							</a>
+						</td>
+						<td class="mttransi"> 
+							<a th:href="@{/elementos/24}">
+								<span class="num">24</span><span class="symbol">Cr </span><span class="name">Crômio</span>
+							</a>
+						</td>
+						<td class="mttransi"> 
+							<a th:href="@{/elementos/25}">
+								<span class="num">25</span><span class="symbol">Mn</span><span class="name">Manganês</span>
+							</a>
+						</td>
+						<td class="mttransi"> 
+							<a th:href="@{/elementos/26}">
+								<span class="num">26</span><span class="symbol">Fe</span><span class="name">Ferro</span>
+							</a>
+						</td>
+						<td class="mttransi"> 
+							<a th:href="@{/elementos/27}">
+								<span class="num">27</span><span class="symbol">Co</span><span class="name">Cobalto</span>
+							</a>
+						</td>
+						<td class="mttransi"> 
+							<a th:href="@{/elementos/28}">
+								<span class="num">28</span><span class="symbol">Ni</span><span class="name">Níquel</span>
+							</a>
+						</td>
+						<td class="mttransi"> 
+							<a th:href="@{/elementos/29}">
+								<span class="num">29</span><span class="symbol">Cu</span><span class="name">Cobre</span>
+							</a>
+						</td>
+						<td class="mttransi"> 
+							<a th:href="@{/elementos/30}">
+								<span class="num">30</span><span class="symbol">Zn</span><span class="name">Zinco</span>
+							</a>
+						</td>
+						<td class="outromt"> 
+							<a th:href="@{/elementos/31}">
+								<span class="num">31</span><span class="symbol">Ga</span><span class="name">Gálio</span>
+							</a>
+						</td>
+						<td class="semimt"> 
+							<a th:href="@{/elementos/32}">
+								<span class="num">32</span><span class="symbol">Ge</span><span class="name">Germânio</span>
+							</a>
+						</td>
+						<td class="semimt"> 
+							<a th:href="@{/elementos/32}">
+								<span class="num">33</span><span class="symbol">As</span><span class="name">Arsênio</span>
+							</a>
+						</td>
+						<td class="naomt"> 
+							<a th:href="@{/elementos/34}">
+								<span class="num">34</span><span class="symbol">Se</span><span class="name">Selênio</span>
+							</a>
+						</td>
+						<td class="halogenio"> 
+							<a th:href="@{/elementos/35}">
+								<span class="num">35</span><span class="symbol">Br</span><span class="name">Bromo</span>
+							</a>
+						</td>
+						<td class="gasnobre"> 
+							<a th:href="@{/elementos/36}">
+								<span class="num">36</span><span class="symbol">Kr</span><span class="name">Criptónio</span>
+							</a>
+						</td>
+					</tr>
+					
+					<!-- Quinta fila -->
+					<tr>
+					
+						<td class="mtalcalinos"> 
+							<a th:href="@{/elementos/37}">
+								<span class="num">37</span><span class="symbol">Rb</span><span class="name">Rubídio</span>
+							</a>
+						</td>
+						<td class="mtalcalinosterro">  
+							<a th:href="@{/elementos/38}">
+								<span class="num">38</span><span class="symbol">Sr</span><span class="name">Estrôncio</span>						
+							</a>
+						</td>
+						<td class="mttransi">  
+							<a th:href="@{/elementos/39}">
+								<span class="num">39</span><span class="symbol">Y</span><span class="name">Ítrio</span>							
+							</a>
+						</td>
+						<td class="mttransi">  
+							<a th:href="@{/elementos/40}">
+								<span class="num">40</span><span class="symbol">Zr</span><span class="name">Zircônio</span>				
+							</a>
+						</td>
+						<td class="mttransi">  
+							<a th:href="@{/elementos/41}">
+								<span class="num">41</span><span class="symbol">Nb</span><span class="name">Nióbio</span>							
+							</a>
+						</td>
+						<td class="mttransi">  
+							<a th:href="@{/elementos/42}">
+								<span class="num">42</span><span class="symbol">Mo</span><span class="name">Molibdênio</span>							
+							</a>
+						</td>
+						<td class="mttransi">  
+							<a th:href="@{/elementos/43}">
+								<span class="num">43</span><span class="symbol">Tc</span><span class="name">Tecnécio</span>
+							</a>
+						</td>
+						<td class="mttransi">  
+							<a th:href="@{/elementos/44}">
+								<span class="num">44</span>	<span class="symbol">Ru</span><span class="name">Rutênio</span>
+							</a>
+						</td>
+						<td class="mttransi">  
+							<a th:href="@{/elementos/45}">
+								<span class="num">45</span><span class="symbol">Rh</span><span class="name">Ródio</span>
+							</a>
+						</td>
+						<td class="mttransi">  
+							<a th:href="@{/elementos/46}">
+								<span class="num">46</span><span class="symbol">Pd</span><span class="name">Paládio</span>
+							</a>
+						</td>
+						<td class="mttransi">  
+							<a th:href="@{/elementos/47}">
+								<span class="num">47</span><span class="symbol">Ag</span><span class="name">Prata</span>
+							</a>
+						</td>
+						<td class="mttransi">  
+							<a th:href="@{/elementos/48}">
+								<span class="num">48</span><span class="symbol">Cd</span><span class="name">Cádmio</span>
+							</a>
+						</td>
+						<td class="outromt">  
+							<a th:href="@{/elementos/49}">
+								<span class="num">49</span><span class="symbol">In</span><span class="name">Índio</span>
+							</a>
+						</td>
+						<td class="outromt"> 
+							<a th:href="@{/elementos/50}">
+								<span class="num">50</span><span class="symbol">Sn</span><span class="name">Estanho</span>
+							</a>
+						</td>
+						<td class="semimt"> 
+							<a th:href="@{/elementos/51}">
+								<span class="num">51</span><span class="symbol">Sb</span><span class="name">Antimônio</span>
+							</a>
+						</td>
+						<td class="semimt"> 
+							<a th:href="@{/elementos/52}">
+								<span class="num">52</span><span class="symbol">Te</span><span class="name">Telúrio</span>
+							</a>
+						</td>
+						<td class="halogenio">  
+							<a th:href="@{/elementos/53}">
+								<span class="num">53</span><span class="symbol">I</span><span class="name">Iodo</span>
+							</a>
+						</td>
+						<td class="gasnobre">  
+							<a th:href="@{/elementos/54}">
+								<span class="num">54</span><span class="symbol">Xe</span><span class="name">Xenônio</span>
+							</a>
+						</td>
+					</tr>
+					
+					<!-- Sexta fila -->
+					<tr>
+						<td class="mtalcalinos">   
+							<a th:href="@{/elementos/55}">
+								<span class="num">55</span><span class="symbol">Cs</span><span class="name">Césio</span>
+							</a>
+						</td>
+						<td class="mtalcalinosterro">   
+							<a th:href="@{/elementos/56}">
+								<span class="num">56</span><span class="symbol">Ba</span><span class="name">Bário</span>
+							</a>
+						</td>
+						<td> <p class="vaz">89-103</p></td>
+						<td class="mttransi">   
+							<a th:href="@{/elementos/72}">
+								<span class="num">72</span><span class="symbol">Hf</span><span class="name">Háfnio</span>
+							</a>
+						</td>
+						<td class="mttransi">   
+							<a th:href="@{/elementos/73}">
+								<span class="num">73</span><span class="symbol">Ta</span><span class="name">Tântalo</span>
+							</a>
+						</td>
+						<td class="mttransi">   
+							<a th:href="@{/elementos/74}">
+								<span class="num">74</span><span class="symbol">W</span><span class="name">Tungstênio</span>
+							</a>
+						</td>
+						<td class="mttransi">   
+							<a th:href="@{/elementos/75}">
+								<span class="num">75</span><span class="symbol">Re</span><span class="name">Rênio</span>
+							</a>
+						</td>
+						<td class="mttransi">   
+							<a th:href="@{/elementos/76}">
+								<span class="num">76</span><span class="symbol">Os</span><span class="name">Ósmio</span>
+							</a>
+						</td>
+						<td class="mttransi">   
+							<a th:href="@{/elementos/77}">
+								<span class="num">77</span><span class="symbol">Ir</span><span class="name">Irídio</span>
+							</a>
+						</td>
+						<td class="mttransi">  
+							<a th:href="@{/elementos/78}">
+								<span class="num">78</span><span class="symbol">Pt</span><span class="name">Platina</span>
+							</a>
+						</td>
+						<td class="mttransi">  
+							<a th:href="@{/elementos/79}">
+								<span class="num">79</span><span class="symbol">Au</span><span class="name">Ouro</span>
+							</a>
+						</td>
+						<td class="mttransi">   
+							<a th:href="@{/elementos/80}">
+								<span class="num">80</span><span class="symbol">Hg</span><span class="name">Mercúrio</span>
+							</a>
+						</td>
+						<td class="outromt">   
+							<a th:href="@{/elementos/81}">
+								<span class="num">81</span><span class="symbol">Tl</span><span class="name">Tálio</span>
+							</a>
+						</td>
+						<td class="outromt">  
+							<a th:href="@{/elementos/82}">
+								<span class="num">82</span><span class="symbol">Pb</span><span class="name">Chumbo</span>
+							</a>
+						</td>
+						<td class="outromt">  
+							<a th:href="@{/elementos/83}">
+								<span class="num">83</span><span class="symbol">Bi</span><span class="name">Bismuto</span>
+							</a>
+						</td>
+						<td class="semimt">  
+							<a th:href="@{/elementos/84}">
+								<span class="num">84</span><span class="symbol">Po</span><span class="name">Polônio</span>
+							</a>
+						</td>
+						<td class="halogenio">  
+							<a th:href="@{/elementos/85}">
+								<span class="num">85</span><span class="symbol">At</span><span class="name">Ástato</span>
+							</a>
+						</td>
+						<td class="gasnobre">  
+							<a th:href="@{/elementos/86}">
+								<span class="num">86</span><span class="symbol">Rn</span><span class="name">Radônio</span>
+							</a>
+						</td>
+					</tr>
+					
+					<!-- Setima fila -->
+					<tr>
+						<td class="mtalcalinos">  
+							<a th:href="@{/elementos/87}">
+								<span class="num">87</span><span class="symbol">Fr</span><span class="name">Frâncio</span>
+							</a>
+						</td>
+						<td class="mtalcalinosterro">  
+							<a th:href="@{/elementos/88}">
+								<span class="num">88</span><span class="symbol">Ra</span><span class="name">Rádio</span>
+							</a>
+						</td>
+						<td> <p class="vaz">57-71</p></td>
+						<td class="mttransi">  
+							<a th:href="@{/elementos/104}">
+								<span class="num">104</span><span class="symbol">Rf</span><span class="name">Rutherfórdio</span>
+							</a>
+						</td>
+						<td class="mttransi">   
+							<a th:href="@{/elementos/105}">
+								<span class="num">105</span><span class="symbol">Db</span><span class="name">Dúbnio</span>
+							</a>
+						</td>
+						<td class="mttransi">   
+							<a th:href="@{/elementos/106}">
+								<span class="num">106</span><span class="symbol">Sg</span><span class="name">Seabórgio</span>
+							</a>
+						</td>
+						<td class="mttransi">   
+							<a th:href="@{/elementos/107}">
+								<span class="num">107</span><span class="symbol">Bh</span><span class="name">Bóhrio</span>
+							</a>
+						</td>
+						<td class="mttransi">  
+							<a th:href="@{/elementos/108}">
+								<span class="num">108</span><span class="symbol">Hs</span><span class="name">Hássio</span>
+							</a>
+						</td>
+						<td class="mttransi">  
+							<a th:href="@{/elementos/109}">
+								<span class="num">109</span><span class="symbol">Mt</span><span class="name">Meitnério</span>
+							</a>
+						</td>
+						<td class="mttransi">   
+							<a th:href="@{/elementos/110}">
+								<span class="num">	110	</span>	<span class="symbol">	Ds	</span>	<span class="name">	Darmstádtio	</span>
+	
+							</a>
+						</td>
+						<td class="mttransi">  
+							<a th:href="@{/elementos/111}">
+								<span class="num">111</span><span class="symbol">Rg</span><span class="name">Roentgênio</span>
+							</a>
+						</td>
+						<td class="mttransi">  
+							<a th:href="@{/elementos/112}">
+								<span class="num">112</span><span class="symbol">Cn</span><span class="name">Copemício</span>
+							</a>
+						</td>
+						<td class="outromt">  
+							<a th:href="@{/elementos/113}">
+								<span class="num">113</span><span class="symbol">Nh</span><span class="name">Nihônio</span>
+							</a>
+						</td>
+						<td class="outromt">  
+							<a th:href="@{/elementos/114}">
+								<span class="num">114</span><span class="symbol">Fl</span><span class="name">Fleróvio</span>
+							</a>
+						</td>
+						<td class="outromt">  
+							<a th:href="@{/elementos/115}">
+								<span class="num">115</span><span class="symbol">Mc</span><span class="name">Moscóvio</span>
+							</a>
+						</td>
+						<td class="outromt">  
+							<a th:href="@{/elementos/116}">
+								<span class="num">116</span><span class="symbol">Lv</span><span class="name">Livermório</span>
+							</a>
+						</td>
+						<td class="halogenio">  
+							<a th:href="@{/elementos/117}">
+								<span class="num">117</span><span class="symbol">Ts</span><span class="name">Tenesso</span>
+							</a>
+						</td>
+						<td class="gasnobre">  
+							<a th:href="@{/elementos/118}">
+								<span class="num">118</span><span class="symbol">Og</span><span class="name">Oganessônio</span>
+							</a>
+						</td>
+					</tr>
+					
+					<tr>
+						<td class="pulo"></td>
+					</tr>
+					
+					<!-- Oitava fila -->
+					<tr>
+						<td colspan="3"></td>
+						<td class="lantanideos">  
+							<a th:href="@{/elementos/57}">
+								<span class="num">57</span><span class="symbol">La</span><span class="name">Lantânio</span>
+							</a>
+						</td>
+						<td class="lantanideos">   
+							<a th:href="@{/elementos/58}">
+								<span class="num">58</span><span class="symbol">Ce</span><span class="name">Cério</span>
+							</a>
+						</td>
+						<td class="lantanideos">   
+							<a th:href="@{/elementos/59}">
+								<span class="num">59</span><span class="symbol">Pr</span><span class="name">Praseodímio</span>
+							</a>
+						</td>
+						<td class="lantanideos">  
+							<a th:href="@{/elementos/60}">
+								<span class="num">60</span><span class="symbol">Nd</span><span class="name">Neodímio</span>
+							</a>
+						</td>
+						<td class="lantanideos">   
+							<a th:href="@{/elementos/61}">
+								<span class="num">61</span><span class="symbol">Pm</span><span class="name">Promécio</span>
+							</a>
+						</td>
+						<td class="lantanideos">  
+							<a th:href="@{/elementos/62}">
+								<span class="num">62</span><span class="symbol">Sm</span><span class="name">Samário	</span>
+							</a>
+						</td>
+						<td class="lantanideos">   
+							<a th:href="@{/elementos/63}">
+								<span class="num">63</span><span class="symbol">Eu</span><span class="name">Európio</span>
+							</a>
+						</td>
+						<td class="lantanideos">   
+							<a th:href="@{/elementos/64}">
+								<span class="num">64</span><span class="symbol">Gd</span><span class="name">Gadolínio</span>
+							</a>
+						</td>
+						<td class="lantanideos">   
+							<a th:href="@{/elementos/65}">
+								<span class="num">65</span><span class="symbol">Tb</span><span class="name">Térbio</span>
+							</a>
+						</td>
+						<td class="lantanideos">   
+							<a th:href="@{/elementos/66}">
+								<span class="num">66</span><span class="symbol">Dy</span><span class="name">Disprósio</span>
+							</a>
+						</td>
+						<td class="lantanideos">  
+							<a th:href="@{/elementos/67}">
+								<span class="num">67</span><span class="symbol">Ho</span><span class="name">Hólmio</span>
+							</a>
+						</td>
+						<td class="lantanideos">  
+							<a th:href="@{/elementos/68}">
+								<span class="num">68</span><span class="symbol">Er</span><span class="name">Érbio</span>
+							</a>
+						</td>
+						<td class="lantanideos">   
+							<a th:href="@{/elementos/69}">
+								<span class="num">69</span><span class="symbol">Tm</span><span class="name">Túlio</span>
+							</a>
+						</td>
+						<td class="lantanideos">  
+							<a th:href="@{/elementos/70}">
+								<span class="num">70</span><span class="symbol">Yb</span><span class="name">Itérbio</span>
+							</a>
+						</td>
+						<td class="lantanideos">   
+							<a th:href="@{/elementos/71}">
+								<span class="num">71</span><span class="symbol">Lu</span><span class="name">Lutécio</span>
+							</a>
+						</td>
+					</tr>
+					
+					<!-- Nona fila -->
+					<tr>
+						<td colspan="3"></td>				
+						<td class="actinideos">   
+							<a th:href="@{/elementos/89}">
+								<span class="num">89</span><span class="symbol">Ac</span><span class="name">Actínio</span>
+							</a>
+						</td>
+						<td class="actinideos">    
+							<a th:href="@{/elementos/90}">
+								<span class="num">90</span><span class="symbol">Th</span><span class="name">Tório</span>
+							</a>
+						</td>
+						<td class="actinideos">    
+							<a th:href="@{/elementos/91}">
+								<span class="num">91</span><span class="symbol">Pa</span><span class="name">Protactínio</span>
+							</a>
+						</td>
+						<td class="actinideos">   
+							<a th:href="@{/elementos/92}">
+								<span class="num">92</span><span class="symbol">U</span><span class="name">Urânio</span>
+							</a>
+						</td>
+						<td class="actinideos">   
+							<a th:href="@{/elementos/93}">
+								<span class="num">93</span><span class="symbol">Np</span><span class="name">Netúnio</span>
+							</a>
+						</td>
+						<td class="actinideos">   
+							<a th:href="@{/elementos/94}">
+								<span class="num">94</span><span class="symbol">Pu</span><span class="name">Plutônio</span>
+							</a>
+						</td>
+						<td class="actinideos">    
+							<a th:href="@{/elementos/95}">
+								<span class="num">95</span><span class="symbol">Am</span><span class="name">Amerício</span>
+							</a>
+						</td>
+						<td class="actinideos">   
+							<a th:href="@{/elementos/96}">
+								<span class="num">96</span><span class="symbol">Cm</span><span class="name">Cúrio</span>
+							</a>
+						</td>
+						<td class="actinideos">   
+							<a th:href="@{/elementos/97}">
+								<span class="num">97</span><span class="symbol">Bk</span><span class="name">Berquélio</span>
+							</a>
+						</td>
+						<td class="actinideos">   
+							<a th:href="@{/elementos/98}">
+								<span class="num">98</span><span class="symbol">Cf</span><span class="name">Califórnio</span>
+							</a>
+						</td>
+						<td class="actinideos">    
+							<a th:href="@{/elementos/99}">
+								<span class="num">99</span><span class="symbol">Es</span><span class="name">Einstênio</span>
+							</a>
+						</td>
+						<td class="actinideos">   
+							<a th:href="@{/elementos/100}">
+								<span class="num">100</span><span class="symbol">Fm</span><span class="name">Férmio</span>
+							</a>
+						</td>
+						<td class="actinideos">   
+							<a th:href="@{/elementos/101}">
+								<span class="num">101</span><span class="symbol">Md</span><span class="name">Mendelévio</span>
+							</a>
+						</td>
+						<td class="actinideos">   
+							<a th:href="@{/elementos/102}">
+								<span class="num">102</span><span class="symbol">No</span><span class="name">Nobélio</span>
+							</a>
+						</td>
+						<td class="actinideos">   
+							<a th:href="@{/elementos/103}">
+								<span class="num">103</span><span class="symbol">Lr</span><span class="name">Laurêncio</span>
+							</a>
+						</td>
+					</tr>
+					
+				</table>
 				
-				<!-- Segunda fila -->
-				<tr>
-					<td class="mtalcalinos"> 
-						<a th:href="@{/elementos/3}">
-							<span class="num">3</span><span class="symbol">Li</span><span class="name">Lítio</span>
-						</a>
-					</td>
-					<td class="mtalcalinosterro"> 
-						<a th:href="@{/elementos/4}">
-							<span class="num">4</span><span class="symbol">Be</span><span class="name">Berílo</span>
-						</a>
-					</td>
-					<td colspan="10"></td>
-					<td class="semimt"> 
-						<a th:href="@{/elementos/5}">
-							<span class="num">5</span><span class="symbol">B</span><span class="name">Boro</span>
-						</a>
-					</td>
-					<td class="naomt"> 
-						<a th:href="@{/elementos/6}">
-							<span class="num">6</span><span class="symbol">C</span><span class="name">Carbono</span>
-						</a>
-					</td>
-					<td class="naomt"> 
-						<a th:href="@{/elementos/7}">
-							<span class="num">7</span><span class="symbol">N</span><span class="name">Nitrogênio</span>
-						</a>
-					</td>
-					<td class="naomt"> 
-						<a th:href="@{/elementos/8}">
-							<span class="num">8</span><span class="symbol">O</span><span class="name">Oxigênio</span>
-						</a>
-					</td>
-					<td class="halogenio"> 
-						<a th:href="@{/elementos/9}">
-							<span class="num">9</span><span class="symbol">F</span><span class="name">Flúor</span>
-						</a>
-					</td>
-					<td class="gasnobre">
-						<a th:href="@{/elementos/10}">
-							<span class="num">10</span><span class="symbol">Ne</span><span class="name">Neônio</span>
-						</a>
-					</td>
-				</tr>
+				<div class="categorias">
+					<a th:href="@{/elementos/119}"><button class="naomt" ></button>
+					</a><p>Não Metais</p>
+					<a th:href="@{/elementos/120}"><button class="mtalcalinos"></button>
+					</a><p>Metais Alcalinos</p>
+					<a th:href="@{/elementos/121}"><button class="semimt"></button>
+					</a><p>Semimetais</p>
+					<a th:href="@{/elementos/122}"><button class="outromt"></button>
+					</a><p>Outros Metais</p>
+					<a th:href="@{/elementos/123}"><button class="lantanideos"></button>
+					</a><p>Latanideos</p>
+				</div>
+				<div class="categorias">
+				<a th:href="@{/elementos/123}"><button class="gasnobre"></button>
+				</a><p>Gases Nobres</p>
+				<a th:href="@{/elementos/123}"><button class="mtalcalinosterro"></button>
+				</a><p>Metais Alcalinos-Terrosos</p>
+				<a th:href="@{/elementos/123}"><button class="halogenio"></button>
+				</a><p>Halogênios</p>
+				<a th:href="@{/elementos/123}"><button class="mttransi"></button>
+				</a><p>Metais de Trasnsação</p>
+				<a th:href="@{/elementos/123}"><button class="actinideos"></button>
+				</a><p>Actinidios</p>
+			</div>
+			</div>
+			<div class="contanier">
+			
+				<h2>O que é a tabela periódica? </h2>
+				<p>A tabela periódica é uma forma de organizar e apresentar algumas informações 
+				sobre todos elementos químicos que existem. A organização é feita com base na ordem 
+				crescente do número atômico (número de prótons no átomo), na configuração eletrônica 
+				dos átomos dos elementos, e também de forma a facilitar o entendimento de propriedades 
+				químicas semelhantes.</p>
 				
-				<!-- Terceira fila -->
-				<tr>
-					<td class="mtalcalinos">  
-						<a th:href="@{/elementos/11}">
-							<span class="num">11</span><span class="symbol">Na</span><span class="name">Sódio</span>
-						</a>
-					</td>
-					<td class="mtalcalinosterro">  
-						<a th:href="@{/elementos/12}">
-							<span class="num">12</span><span class="symbol">Mg</span><span class="name">Magnésio</span>
-						</a>
-					</td>
-					<td colspan="10"></td>
-					<td class="outromt">  
-						<a th:href="@{/elementos/13}">
-							<span class="num">13</span><span class="symbol">Al</span><span class="name">Alumínio</span>
-						</a>
-					</td>
-					<td class="semimt">  
-						<a th:href="@{/elementos/14}">
-							<span class="num">14</span><span class="symbol">Si</span><span class="name">Silício</span>
-						</a>
-					</td>
-					<td class="naomt"> 
-						<a th:href="@{/elementos/15}">
-							<span class="num">15</span><span class="symbol">P</span><span class="name">Fósforo</span>
-						</a>
-					</td>
-					<td class="naomt">  
-						<a th:href="@{/elementos/16}">
-							<span class="num">16</span><span class="symbol">S</span><span class="name">Enxofre</span>
-						</a>
-					</td>
-					<td class="halogenio">  
-						<a th:href="@{/elementos/17}">
-							<span class="num">17</span><span class="symbol">Cl</span><span class="name">Cloro</span>
-						</a>
-					</td>
-					<td class="gasnobre">  
-						<a th:href="@{/elementos/18}">
-							<span class="num">18</span><span class="symbol">Ar</span><span class="name">Argônio</span>
-						</a>
-					</td>
-				</tr>
+				<h2>Porque ela tem o nome de tabela periódica?</h2>
+				<p>É chamada de periódica porque mostra a repetição de algumas propriedades que alguns 
+				elementos tem em comum. Ou seja, as propriedades aparecem de forma ‘periódica’.</p>
 				
-				<!-- Quarta fila -->
-				<tr>
-					<td class="mtalcalinos"> 
-						<a th:href="@{/elementos/19}">
-							<span class="num">19</span><span class="symbol">K</span><span class="name">Potássio</span>
-						</a>
-					</td>
-					<td class="mtalcalinosterro"> 
-						<a th:href="@{/elementos/20}">
-							<span class="num">20</span><span class="symbol">Ca</span><span class="name">Cálcio</span>
-						</a>
-					</td>
-					<td class="mttransi"> 
-						<a th:href="@{/elementos/21}">
-							<span class="num">21</span><span class="symbol">Sc</span><span class="name">Escândio</span>
-						</a>
-					</td>
-					<td class="mttransi"> 
-						<a th:href="@{/elementos/22}">
-							<span class="num">22</span><span class="symbol">Ti</span><span class="name">Titânio</span>
-						</a>
-					</td>
-					<td class="mttransi"> 
-						<a th:href="@{/elementos/23}">
-							<span class="num">23</span><span class="symbol">V</span><span class="name">Vanádio</span>
-						</a>
-					</td>
-					<td class="mttransi"> 
-						<a th:href="@{/elementos/24}">
-							<span class="num">24</span><span class="symbol">Cr </span><span class="name">Crômio</span>
-						</a>
-					</td>
-					<td class="mttransi"> 
-						<a th:href="@{/elementos/25}">
-							<span class="num">25</span><span class="symbol">Mn</span><span class="name">Manganês</span>
-						</a>
-					</td>
-					<td class="mttransi"> 
-						<a th:href="@{/elementos/26}">
-							<span class="num">26</span><span class="symbol">Fe</span><span class="name">Ferro</span>
-						</a>
-					</td>
-					<td class="mttransi"> 
-						<a th:href="@{/elementos/27}">
-							<span class="num">27</span><span class="symbol">Co</span><span class="name">Cobalto</span>
-						</a>
-					</td>
-					<td class="mttransi"> 
-						<a th:href="@{/elementos/28}">
-							<span class="num">28</span><span class="symbol">Ni</span><span class="name">Níquel</span>
-						</a>
-					</td>
-					<td class="mttransi"> 
-						<a th:href="@{/elementos/29}">
-							<span class="num">29</span><span class="symbol">Cu</span><span class="name">Cobre</span>
-						</a>
-					</td>
-					<td class="mttransi"> 
-						<a th:href="@{/elementos/30}">
-							<span class="num">30</span><span class="symbol">Zn</span><span class="name">Zinco</span>
-						</a>
-					</td>
-					<td class="outromt"> 
-						<a th:href="@{/elementos/31}">
-							<span class="num">31</span><span class="symbol">Ga</span><span class="name">Gálio</span>
-						</a>
-					</td>
-					<td class="semimt"> 
-						<a th:href="@{/elementos/32}">
-							<span class="num">32</span><span class="symbol">Ge</span><span class="name">Germânio</span>
-						</a>
-					</td>
-					<td class="semimt"> 
-						<a th:href="@{/elementos/32}">
-							<span class="num">33</span><span class="symbol">As</span><span class="name">Arsênio</span>
-						</a>
-					</td>
-					<td class="naomt"> 
-						<a th:href="@{/elementos/34}">
-							<span class="num">34</span><span class="symbol">Se</span><span class="name">Selênio</span>
-						</a>
-					</td>
-					<td class="halogenio"> 
-						<a th:href="@{/elementos/35}">
-							<span class="num">35</span><span class="symbol">Br</span><span class="name">Bromo</span>
-						</a>
-					</td>
-					<td class="gasnobre"> 
-						<a th:href="@{/elementos/36}">
-							<span class="num">36</span><span class="symbol">Kr</span><span class="name">Criptónio</span>
-						</a>
-					</td>
-				</tr>
+				<p>O uso da palavra tabela não tem a sua origem explicada. Provavelmente tendo relação com a maneira com 
+				que ela é organizada.</p>
 				
-				<!-- Quinta fila -->
-				<tr>
-				
-					<td class="mtalcalinos"> 
-						<a th:href="@{/elementos/37}">
-							<span class="num">37</span><span class="symbol">Rb</span><span class="name">Rubídio</span>
-						</a>
-					</td>
-					<td class="mtalcalinosterro">  
-						<a th:href="@{/elementos/38}">
-							<span class="num">38</span><span class="symbol">Sr</span><span class="name">Estrôncio</span>						
-						</a>
-					</td>
-					<td class="mttransi">  
-						<a th:href="@{/elementos/39}">
-							<span class="num">39</span><span class="symbol">Y</span><span class="name">Ítrio</span>							
-						</a>
-					</td>
-					<td class="mttransi">  
-						<a th:href="@{/elementos/40}">
-							<span class="num">40</span><span class="symbol">Zr</span><span class="name">Zircônio</span>				
-						</a>
-					</td>
-					<td class="mttransi">  
-						<a th:href="@{/elementos/41}">
-							<span class="num">41</span><span class="symbol">Nb</span><span class="name">Nióbio</span>							
-						</a>
-					</td>
-					<td class="mttransi">  
-						<a th:href="@{/elementos/42}">
-							<span class="num">42</span><span class="symbol">Mo</span><span class="name">Molibdênio</span>							
-						</a>
-					</td>
-					<td class="mttransi">  
-						<a th:href="@{/elementos/43}">
-							<span class="num">43</span><span class="symbol">Tc</span><span class="name">Tecnécio</span>
-						</a>
-					</td>
-					<td class="mttransi">  
-						<a th:href="@{/elementos/44}">
-							<span class="num">44</span>	<span class="symbol">Ru</span><span class="name">Rutênio</span>
-						</a>
-					</td>
-					<td class="mttransi">  
-						<a th:href="@{/elementos/45}">
-							<span class="num">45</span><span class="symbol">Rh</span><span class="name">Ródio</span>
-						</a>
-					</td>
-					<td class="mttransi">  
-						<a th:href="@{/elementos/46}">
-							<span class="num">46</span><span class="symbol">Pd</span><span class="name">Paládio</span>
-						</a>
-					</td>
-					<td class="mttransi">  
-						<a th:href="@{/elementos/47}">
-							<span class="num">47</span><span class="symbol">Ag</span><span class="name">Prata</span>
-						</a>
-					</td>
-					<td class="mttransi">  
-						<a th:href="@{/elementos/48}">
-							<span class="num">48</span><span class="symbol">Cd</span><span class="name">Cádmio</span>
-						</a>
-					</td>
-					<td class="outromt">  
-						<a th:href="@{/elementos/49}">
-							<span class="num">49</span><span class="symbol">In</span><span class="name">Índio</span>
-						</a>
-					</td>
-					<td class="outromt"> 
-						<a th:href="@{/elementos/50}">
-							<span class="num">50</span><span class="symbol">Sn</span><span class="name">Estanho</span>
-						</a>
-					</td>
-					<td class="semimt"> 
-						<a th:href="@{/elementos/51}">
-							<span class="num">51</span><span class="symbol">Sb</span><span class="name">Antimônio</span>
-						</a>
-					</td>
-					<td class="semimt"> 
-						<a th:href="@{/elementos/52}">
-							<span class="num">52</span><span class="symbol">Te</span><span class="name">Telúrio</span>
-						</a>
-					</td>
-					<td class="halogenio">  
-						<a th:href="@{/elementos/53}">
-							<span class="num">53</span><span class="symbol">I</span><span class="name">Iodo</span>
-						</a>
-					</td>
-					<td class="gasnobre">  
-						<a th:href="@{/elementos/54}">
-							<span class="num">54</span><span class="symbol">Xe</span><span class="name">Xenônio</span>
-						</a>
-					</td>
-				</tr>
-				
-				<!-- Sexta fila -->
-				<tr>
-					<td class="mtalcalinos">   
-						<a th:href="@{/elementos/55}">
-							<span class="num">55</span><span class="symbol">Cs</span><span class="name">Césio</span>
-						</a>
-					</td>
-					<td class="mtalcalinosterro">   
-						<a th:href="@{/elementos/56}">
-							<span class="num">56</span><span class="symbol">Ba</span><span class="name">Bário</span>
-						</a>
-					</td>
-					<td> <p class="vaz">89-103</p></td>
-					<td class="mttransi">   
-						<a th:href="@{/elementos/72}">
-							<span class="num">72</span><span class="symbol">Hf</span><span class="name">Háfnio</span>
-						</a>
-					</td>
-					<td class="mttransi">   
-						<a th:href="@{/elementos/73}">
-							<span class="num">73</span><span class="symbol">Ta</span><span class="name">Tântalo</span>
-						</a>
-					</td>
-					<td class="mttransi">   
-						<a th:href="@{/elementos/74}">
-							<span class="num">74</span><span class="symbol">W</span><span class="name">Tungstênio</span>
-						</a>
-					</td>
-					<td class="mttransi">   
-						<a th:href="@{/elementos/75}">
-							<span class="num">75</span><span class="symbol">Re</span><span class="name">Rênio</span>
-						</a>
-					</td>
-					<td class="mttransi">   
-						<a th:href="@{/elementos/76}">
-							<span class="num">76</span><span class="symbol">Os</span><span class="name">Ósmio</span>
-						</a>
-					</td>
-					<td class="mttransi">   
-						<a th:href="@{/elementos/77}">
-							<span class="num">77</span><span class="symbol">Ir</span><span class="name">Irídio</span>
-						</a>
-					</td>
-					<td class="mttransi">  
-						<a th:href="@{/elementos/78}">
-							<span class="num">78</span><span class="symbol">Pt</span><span class="name">Platina</span>
-						</a>
-					</td>
-					<td class="mttransi">  
-						<a th:href="@{/elementos/79}">
-							<span class="num">79</span><span class="symbol">Au</span><span class="name">Ouro</span>
-						</a>
-					</td>
-					<td class="mttransi">   
-						<a th:href="@{/elementos/80}">
-							<span class="num">80</span><span class="symbol">Hg</span><span class="name">Mercúrio</span>
-						</a>
-					</td>
-					<td class="outromt">   
-						<a th:href="@{/elementos/81}">
-							<span class="num">81</span><span class="symbol">Tl</span><span class="name">Tálio</span>
-						</a>
-					</td>
-					<td class="outromt">  
-						<a th:href="@{/elementos/82}">
-							<span class="num">82</span><span class="symbol">Pb</span><span class="name">Chumbo</span>
-						</a>
-					</td>
-					<td class="outromt">  
-						<a th:href="@{/elementos/83}">
-							<span class="num">83</span><span class="symbol">Bi</span><span class="name">Bismuto</span>
-						</a>
-					</td>
-					<td class="semimt">  
-						<a th:href="@{/elementos/84}">
-							<span class="num">84</span><span class="symbol">Po</span><span class="name">Polônio</span>
-						</a>
-					</td>
-					<td class="halogenio">  
-						<a th:href="@{/elementos/85}">
-							<span class="num">85</span><span class="symbol">At</span><span class="name">Ástato</span>
-						</a>
-					</td>
-					<td class="gasnobre">  
-						<a th:href="@{/elementos/86}">
-							<span class="num">86</span><span class="symbol">Rn</span><span class="name">Radônio</span>
-						</a>
-					</td>
-				</tr>
-				
-				<!-- Setima fila -->
-				<tr>
-					<td class="mtalcalinos">  
-						<a th:href="@{/elementos/87}">
-							<span class="num">87</span><span class="symbol">Fr</span><span class="name">Frâncio</span>
-						</a>
-					</td>
-					<td class="mtalcalinosterro">  
-						<a th:href="@{/elementos/88}">
-							<span class="num">88</span><span class="symbol">Ra</span><span class="name">Rádio</span>
-						</a>
-					</td>
-					<td> <p class="vaz">57-71</p></td>
-					<td class="mttransi">  
-						<a th:href="@{/elementos/104}">
-							<span class="num">104</span><span class="symbol">Rf</span><span class="name">Rutherfórdio</span>
-						</a>
-					</td>
-					<td class="mttransi">   
-						<a th:href="@{/elementos/105}">
-							<span class="num">105</span><span class="symbol">Db</span><span class="name">Dúbnio</span>
-						</a>
-					</td>
-					<td class="mttransi">   
-						<a th:href="@{/elementos/106}">
-							<span class="num">106</span><span class="symbol">Sg</span><span class="name">Seabórgio</span>
-						</a>
-					</td>
-					<td class="mttransi">   
-						<a th:href="@{/elementos/107}">
-							<span class="num">107</span><span class="symbol">Bh</span><span class="name">Bóhrio</span>
-						</a>
-					</td>
-					<td class="mttransi">  
-						<a th:href="@{/elementos/108}">
-							<span class="num">108</span><span class="symbol">Hs</span><span class="name">Hássio</span>
-						</a>
-					</td>
-					<td class="mttransi">  
-						<a th:href="@{/elementos/109}">
-							<span class="num">109</span><span class="symbol">Mt</span><span class="name">Meitnério</span>
-						</a>
-					</td>
-					<td class="mttransi">   
-						<a th:href="@{/elementos/110}">
-							<span class="num">	110	</span>	<span class="symbol">	Ds	</span>	<span class="name">	Darmstádtio	</span>
-
-						</a>
-					</td>
-					<td class="mttransi">  
-						<a th:href="@{/elementos/111}">
-							<span class="num">111</span><span class="symbol">Rg</span><span class="name">Roentgênio</span>
-						</a>
-					</td>
-					<td class="mttransi">  
-						<a th:href="@{/elementos/112}">
-							<span class="num">112</span><span class="symbol">Cn</span><span class="name">Copemício</span>
-						</a>
-					</td>
-					<td class="outromt">  
-						<a th:href="@{/elementos/113}">
-							<span class="num">113</span><span class="symbol">Nh</span><span class="name">Nihônio</span>
-						</a>
-					</td>
-					<td class="outromt">  
-						<a th:href="@{/elementos/114}">
-							<span class="num">114</span><span class="symbol">Fl</span><span class="name">Fleróvio</span>
-						</a>
-					</td>
-					<td class="outromt">  
-						<a th:href="@{/elementos/115}">
-							<span class="num">115</span><span class="symbol">Mc</span><span class="name">Moscóvio</span>
-						</a>
-					</td>
-					<td class="outromt">  
-						<a th:href="@{/elementos/116}">
-							<span class="num">116</span><span class="symbol">Lv</span><span class="name">Livermório</span>
-						</a>
-					</td>
-					<td class="halogenio">  
-						<a th:href="@{/elementos/117}">
-							<span class="num">117</span><span class="symbol">Ts</span><span class="name">Tenesso</span>
-						</a>
-					</td>
-					<td class="gasnobre">  
-						<a th:href="@{/elementos/118}">
-							<span class="num">118</span><span class="symbol">Og</span><span class="name">Oganessônio</span>
-						</a>
-					</td>
-				</tr>
-				
-				<tr>
-					<td class="pulo"></td>
-				</tr>
-				
-				<!-- Oitava fila -->
-				<tr>
-					<td colspan="3"></td>
-					<td class="lantanideos">  
-						<a th:href="@{/elementos/57}">
-							<span class="num">57</span><span class="symbol">La</span><span class="name">Lantânio</span>
-						</a>
-					</td>
-					<td class="lantanideos">   
-						<a th:href="@{/elementos/58}">
-							<span class="num">58</span><span class="symbol">Ce</span><span class="name">Cério</span>
-						</a>
-					</td>
-					<td class="lantanideos">   
-						<a th:href="@{/elementos/59}">
-							<span class="num">59</span><span class="symbol">Pr</span><span class="name">Praseodímio</span>
-						</a>
-					</td>
-					<td class="lantanideos">  
-						<a th:href="@{/elementos/60}">
-							<span class="num">60</span><span class="symbol">Nd</span><span class="name">Neodímio</span>
-						</a>
-					</td>
-					<td class="lantanideos">   
-						<a th:href="@{/elementos/61}">
-							<span class="num">61</span><span class="symbol">Pm</span><span class="name">Promécio</span>
-						</a>
-					</td>
-					<td class="lantanideos">  
-						<a th:href="@{/elementos/62}">
-							<span class="num">62</span><span class="symbol">Sm</span><span class="name">Samário	</span>
-						</a>
-					</td>
-					<td class="lantanideos">   
-						<a th:href="@{/elementos/63}">
-							<span class="num">63</span><span class="symbol">Eu</span><span class="name">Európio</span>
-						</a>
-					</td>
-					<td class="lantanideos">   
-						<a th:href="@{/elementos/64}">
-							<span class="num">64</span><span class="symbol">Gd</span><span class="name">Gadolínio</span>
-						</a>
-					</td>
-					<td class="lantanideos">   
-						<a th:href="@{/elementos/65}">
-							<span class="num">65</span><span class="symbol">Tb</span><span class="name">Térbio</span>
-						</a>
-					</td>
-					<td class="lantanideos">   
-						<a th:href="@{/elementos/66}">
-							<span class="num">66</span><span class="symbol">Dy</span><span class="name">Disprósio</span>
-						</a>
-					</td>
-					<td class="lantanideos">  
-						<a th:href="@{/elementos/67}">
-							<span class="num">67</span><span class="symbol">Ho</span><span class="name">Hólmio</span>
-						</a>
-					</td>
-					<td class="lantanideos">  
-						<a th:href="@{/elementos/68}">
-							<span class="num">68</span><span class="symbol">Er</span><span class="name">Érbio</span>
-						</a>
-					</td>
-					<td class="lantanideos">   
-						<a th:href="@{/elementos/69}">
-							<span class="num">69</span><span class="symbol">Tm</span><span class="name">Túlio</span>
-						</a>
-					</td>
-					<td class="lantanideos">  
-						<a th:href="@{/elementos/70}">
-							<span class="num">70</span><span class="symbol">Yb</span><span class="name">Itérbio</span>
-						</a>
-					</td>
-					<td class="lantanideos">   
-						<a th:href="@{/elementos/71}">
-							<span class="num">71</span><span class="symbol">Lu</span><span class="name">Lutécio</span>
-						</a>
-					</td>
-				</tr>
-				
-				<!-- Nona fila -->
-				<tr>
-					<td colspan="3"></td>				
-					<td class="actinideos">   
-						<a th:href="@{/elementos/89}">
-							<span class="num">89</span><span class="symbol">Ac</span><span class="name">Actínio</span>
-						</a>
-					</td>
-					<td class="actinideos">    
-						<a th:href="@{/elementos/90}">
-							<span class="num">90</span><span class="symbol">Th</span><span class="name">Tório</span>
-						</a>
-					</td>
-					<td class="actinideos">    
-						<a th:href="@{/elementos/91}">
-							<span class="num">91</span><span class="symbol">Pa</span><span class="name">Protactínio</span>
-						</a>
-					</td>
-					<td class="actinideos">   
-						<a th:href="@{/elementos/92}">
-							<span class="num">92</span><span class="symbol">U</span><span class="name">Urânio</span>
-						</a>
-					</td>
-					<td class="actinideos">   
-						<a th:href="@{/elementos/93}">
-							<span class="num">93</span><span class="symbol">Np</span><span class="name">Netúnio</span>
-						</a>
-					</td>
-					<td class="actinideos">   
-						<a th:href="@{/elementos/94}">
-							<span class="num">94</span><span class="symbol">Pu</span><span class="name">Plutônio</span>
-						</a>
-					</td>
-					<td class="actinideos">    
-						<a th:href="@{/elementos/95}">
-							<span class="num">95</span><span class="symbol">Am</span><span class="name">Amerício</span>
-						</a>
-					</td>
-					<td class="actinideos">   
-						<a th:href="@{/elementos/96}">
-							<span class="num">96</span><span class="symbol">Cm</span><span class="name">Cúrio</span>
-						</a>
-					</td>
-					<td class="actinideos">   
-						<a th:href="@{/elementos/97}">
-							<span class="num">97</span><span class="symbol">Bk</span><span class="name">Berquélio</span>
-						</a>
-					</td>
-					<td class="actinideos">   
-						<a th:href="@{/elementos/98}">
-							<span class="num">98</span><span class="symbol">Cf</span><span class="name">Califórnio</span>
-						</a>
-					</td>
-					<td class="actinideos">    
-						<a th:href="@{/elementos/99}">
-							<span class="num">99</span><span class="symbol">Es</span><span class="name">Einstênio</span>
-						</a>
-					</td>
-					<td class="actinideos">   
-						<a th:href="@{/elementos/100}">
-							<span class="num">100</span><span class="symbol">Fm</span><span class="name">Férmio</span>
-						</a>
-					</td>
-					<td class="actinideos">   
-						<a th:href="@{/elementos/101}">
-							<span class="num">101</span><span class="symbol">Md</span><span class="name">Mendelévio</span>
-						</a>
-					</td>
-					<td class="actinideos">   
-						<a th:href="@{/elementos/102}">
-							<span class="num">102</span><span class="symbol">No</span><span class="name">Nobélio</span>
-						</a>
-					</td>
-					<td class="actinideos">   
-						<a th:href="@{/elementos/103}">
-							<span class="num">103</span><span class="symbol">Lr</span><span class="name">Laurêncio</span>
-						</a>
-					</td>
-				</tr>
-				
-			</table>
+			</div>
+			
 		</section>
-		
+		<footer>
+			<p>By JS</p>
+		</footer>
 	</body>
 </html>
