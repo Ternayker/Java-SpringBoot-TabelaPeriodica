@@ -1,7 +1,28 @@
 @charset "UTF-8";
 
-@media all and (max-width: 2000px) {
+@media all and (max-width: 1000px) {
     .content{
-      overflow-y: scroll;
+      overflow-X: scroll;
     }
+}
+
+@media all and (max-width: 700px) {
+	.num{
+		font-size: 12px;
+	}
+	
+	.symbol{
+		font-size: 20px;
+		margin-top: 0px;
+	}
+	
+    .name{
+      display: none;
+    }
+    
+    .vaz{
+    font-size: 12px;
+	text-align: center;
+	font-weight: 600;
+}
 }
