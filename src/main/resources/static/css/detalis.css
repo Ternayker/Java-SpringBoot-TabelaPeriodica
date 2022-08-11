@@ -1,0 +1,36 @@
+@charset "ISO-8859-1";
+
+.title{
+	text-align: center;
+	font-family: cursive;
+	font-size: 30px;
+	margin-top: 30px;
+}
+
+.corpo{
+	width: 85%;
+	margin: auto;
+}
+
+td{
+	padding: 0 10px 0 10px;
+	border: solid 2px black;
+}
+
+.corpo p{
+	font-family: Arial;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+table{
+	margin-left: 20px;	
+}
+
+td span{
+	text-align: center;
+	font-family: Arial;
+	font-size: 20px;
+	margin-top: inherit;
+	color: #6C15BC;
+}

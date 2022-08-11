@@ -21,8 +21,20 @@
     }
     
     .vaz{
-    font-size: 12px;
-	text-align: center;
-	font-weight: 600;
-}
+	    font-size: 12px;
+		text-align: center;
+		font-weight: 600;
+	}
+	
+	.title{
+		font-size: 25px;
+	}
+	
+	.corpo p{
+		font-size: 20px;
+	}
+	
+	.td span{
+		font-size: 15px;
+	}
 }

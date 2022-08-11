@@ -4,32 +4,58 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Tabela Periodica</title>
+		<link rel="stylesheet" type="text/css" href="../css/EstilosGerais.css">
+		<link rel="stylesheet" type="text/css" href="../css/detalis.css">
+		<link rel="stylesheet" type="text/css" href="../css/responsivo.css">
 	</head>
 	
 	<body>
 	
-		<header>
-		
-			<!-- Cabeçario -->
-			<nav>
-			    <a href="/elementos">QUÍMICA ELEMENTAR</a>
+		<header class="cabecario">
+			<nav class="cabecario-nav">
+				<a href="/elementos">QUÍMICA ELEMENTAR</a>
 			</nav>
-			
 		</header>
 		
 		<main>
-			
 				<article>
-		            <h1 ><span th:utext="*{page.name}"></span></h1>
+					<table>
+		            	<tr>
+		            		<td>
+			            		<span>Símbolo</span>
+			            	</td>
+			            	<td>
+			            		<span th:utext="*{page.symbol}"></span>
+			            	</td>
+		            	<tr>
+		            		<td>
+			            		<span>Número Atômico</span>
+			            	</td>
+		            		<td>
+		            			<span th:utext="*{page.numberAtomic}"></span>	            			
+		            		</td>
+		            	</tr>
+		            	<tr>
+		            		<td>
+			            		<span>Categoria</span>
+			            	</td>
+			            	<td>		            	
+			            		<span th:utext="*{page.category}"></span>
+			            	</td>
+		            	</tr>
+		            </table>
+		            <h1 class="title"><span th:utext="*{page.name}"></span></h1>
 		            
-		            <section>
-		                <p ><span th:utext="*{page.text}"></span></p>
+		            <section class="corpo">
+		            
+		                <p><span th:utext="*{page.text}"></span></p>
 		            </section>
             
        		 	</article>
-				
-
-		
+       		 	
+       		 	<footer>
+					<p>By JS</p>
+				</footer>
 		</main>
 		
 	</body>
