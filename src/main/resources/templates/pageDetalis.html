@@ -10,6 +10,7 @@
 	</head>
 	
 	<body>
+		<main>
 	
 		<header class="cabecario">
 			<nav class="cabecario-nav">
@@ -17,22 +18,21 @@
 			</nav>
 		</header>
 		
-		<main>
-				<article>
+		
 					<table>
 		            	<tr>
 		            		<td>
 			            		<span>Símbolo</span>
 			            	</td>
 			            	<td>
-			            		<span th:utext="*{page.symbol}"></span>
+			            		<span th:text ="${page.symbol}"></span>
 			            	</td>
 		            	<tr>
 		            		<td>
 			            		<span>Número Atômico</span>
 			            	</td>
 		            		<td>
-		            			<span th:utext="*{page.numberAtomic}"></span>	            			
+		            			<span th:text="${page.numberAtomic}"></span>	            			
 		            		</td>
 		            	</tr>
 		            	<tr>
@@ -40,18 +40,16 @@
 			            		<span>Categoria</span>
 			            	</td>
 			            	<td>		            	
-			            		<span th:utext="*{page.category}"></span>
+			            		<span th:text="${page.category}"></span>
 			            	</td>
 		            	</tr>
 		            </table>
-		            <h1 class="title"><span th:utext="*{page.name}"></span></h1>
+		            <h1 class="title"><span th:text="${page.name}"></span></h1>
 		            
 		            <section class="corpo">
 		            
-		                <p><span th:utext="*{page.text}"></span></p>
+		                <p><span th:text="${page.text}"></span></p>
 		            </section>
-            
-       		 	</article>
        		 	
        		 	<footer>
 					<p>By JS</p>
